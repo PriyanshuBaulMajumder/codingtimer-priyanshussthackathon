@@ -1,0 +1,190 @@
+/* Your existing CSS styles here */
+
+/* New styles for responsiveness and alignment */
+@media screen and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+    }
+}
+
+body {
+    margin: 05;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(36,0,5);
+    background: rgba(233, 14, 109, 0.959);
+    background: radial-gradient(circle, rgb(253, 23, 122) 0%, rgba(145, 226, 15, 0.644) 100%); 
+   
+}
+
+    
+    .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Set a specific height for the header */
+    z-index: 999; /* Place the header in front of everything */
+    }
+    
+    .app-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        z-index: 1;
+        
+        padding-top: 150px; /* Add padding to move the content below the header */
+    }
+    
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        width: 100%;
+        max-width: 1200px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        color: antiquewhite;
+    }
+    .header h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-family:"Cambria" /* Use a different font */
+     /* Change the text color */
+    }
+
+    
+    .controls-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+    
+    .controls-container select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    }
+  
+    .app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    z-index: 1; /* Bring the flexboxes above the background */
+    }
+    
+    .timer-container,
+    .task-bar {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px); /* Apply the neoglassmorphism blur effect */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70vw; /* Adjust the width as needed */
+    max-width: 400px; /* Set a maximum width for better readability */
+    }
+    
+    .timer {
+    font-size: 7rem;
+    text-align: center;
+    color: azure;
+    }
+    
+    .timer-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 70vw; /* Adjust the width as needed */
+    max-width: 400px; /* Set a maximum width for better readability */
+    }
+    
+    .controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+    
+    .controls-container select {
+    width: 100%; /* Make the dropdown box wider */
+    padding: 10px; /* Add padding for better appearance */
+    font-size: 16px; /* Increase font size for better readability */
+    }
+    
+    .task-bar {
+    text-align: center;
+    margin-top: 20px; /* Add some spacing between the flexboxes */
+    width: 70vw; /* Adjust the width as needed */
+    max-width: 400px; /* Set a maximum width for better readability */
+    }
+    
+    .task-bar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    }
+    
+    #taskInput {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    }
+    
+    #addTaskButton {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+    
+    #taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    
+    #taskList li {
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    }
+    
+    #taskList li.strikethrough {
+    text-decoration: line-through;
+    }
+    
+    
